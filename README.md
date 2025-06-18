@@ -24,5 +24,7 @@ Cross-Platform - Works on desktop, tablet, and mobile devices
 Touch Controls - Mobile-friendly directional buttons
 Adaptive Layout - Responsive UI that scales beautifully
 Keyboard Support - Arrow keys and WASD controls
+![Screenshot snake](https://github.com/user-attachments/assets/ea2f5718-3bd5-47f1-82ce-68cd2da9e505)
 
-Currently i am working Javascript will.............
+
+# Currently i am working Javascript
