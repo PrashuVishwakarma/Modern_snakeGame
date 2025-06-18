@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Modern Snake Game</h1>
+        
+        <div class="game-info">
+            <div class="score-display">Score: <span id="score">0</span></div>
+            <div class="level-display">Level: <span id="level">1</span></div>
+        </div>
+
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+        <div class="controls">
+            <button class="control-btn" onclick="togglePause()">⏸️ Pause</button>
+            <button class="control-btn" onclick="restartGame()">🔄 Restart</button>
+            <button class="control-btn" onclick="toggleSpeed()">⚡ Speed</button>
+        </div>
+
+        <div class="mobile-controls">
+            <div></div>
+            <button class="mobile-btn" onclick="changeDirection('up')">⬆️</button>
+            <div></div>
+            <button class="mobile-btn" onclick="changeDirection('left')">⬅️</button>
+            <div></div>
+            <button class="mobile-btn" onclick="changeDirection('right')">➡️</button>
+            <div></div>
+            <button class="mobile-btn" onclick="changeDirection('down')">⬇️</button>
+            <div></div>
+        </div>
+
+        <div class="instructions">
+            <strong>Controls:</strong> Use arrow keys or WASD to move<br>
+            <strong>Goal:</strong> Eat the glowing food to grow and increase your score<br>
+            <strong>Avoid:</strong> Hitting walls or your own tail
+        </div>
+    </div>
+
+    <div class="game-over" id="gameOverScreen">
+        <h2>Game Over!</h2>
+        <p>Final Score: <span id="finalScore">0</span></p>
+        <p>Level Reached: <span id="finalLevel">1</span></p>
+        <button class="restart-btn" onclick="restartGame()">Play Again</button>
+    </div>
+</body>
+</html>
